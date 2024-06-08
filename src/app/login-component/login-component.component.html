@@ -11,6 +11,7 @@
         .loginbox1 {
             position: fixed;
             top: 6rem;
+            left: 0rem;
             height: 40rem;
             width: 40rem;
             background: rgba(255, 255, 255, 0.15);
@@ -21,7 +22,7 @@
             -moz-box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.9);
             box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.9);
             /* animation: ukeatla 3s infinite; */
-            transform: scale(1);
+            transform: scale(1.2);
             transition: all 0.2s ease-in-out;
             animation: paiki 3s ease-in-out 6s;
 
@@ -33,17 +34,17 @@
             }
 
             50% {
-                transform: scale(0.7);
+                transform: scale(0.9);
             }
 
             100% {
-                transform: scale(1);
+                transform: scale(1.2);
             }
         }
 
         .loginbox1:hover {
 
-            transform: scale(1.03);
+            transform: scale(1.3);
 
         }
 
@@ -76,6 +77,7 @@
             color: white;
             transition: all 0.4s ease-in-out;
         }
+
         .inpbox2 {
             position: absolute;
             left: 5rem;
@@ -111,6 +113,7 @@
             width: 30.7rem;
 
         }
+
         .inpbox2:focus {
             border-bottom: 3px solid whitesmoke;
             width: 32rem;
@@ -123,12 +126,13 @@
         .bb {
             position: fixed;
             z-index: 200;
-            left: 0;
-            top: 0;
-            height: 54rem;
-            width: 107rem;
+            left: -30rem;
+            top: -5rem;
+            height: 100rem;
+            width: 95rem;
+            /* width: 88rem; */
             background-color: #3E115C;
-            
+
 
 
         }
@@ -196,8 +200,8 @@
 
         #loading-percentage {
             position: fixed;
-            left: 45rem;
-            top: 18rem;
+            left: 10rem;
+            top: 30rem;
             filter: brightness(90%);
             animation: flicker 1.5s infinite alternate;
             color: #fff;
@@ -320,8 +324,8 @@
 
         .whitebox1 {
             position: fixed;
-            left: 30rem;
-            top: 35rem;
+            left: -50rem;
+            top: 60rem;
             width: 0rem;
             height: 5rem;
             background-color: rgb(255, 255, 255);
@@ -340,92 +344,143 @@
             }
 
             100% {
-                width: 50rem;
+                width: 140rem;
             }
 
         }
-        .inputname{
+
+        .inputname {
             position: fixed;
-            left:27rem;
+            left: 27rem;
             top: 8rem;
         }
-        .inputemail{
+
+        .inputemail {
             position: fixed;
-            left:27rem;
+            left: 27rem;
             top: 14rem;
         }
-        .inputnum{
+
+        .inputnum {
             position: fixed;
-            left:27rem;
+            left: 27rem;
             top: 20rem;
         }
+
         /* body{
  background:$background-color; 
   width:100%;
   height:100%;
 } */
-.loading{
-   text-transform:uppercase;
-   font-family: 'Cabin Condensed', sans-serif;
-  font-weight:bold;
-  font-size:100pt;
-  text-align:center;
-  height:120px;
-  line-height:110px;
-  vertical-align:bottom;
-  position:absolute;
-  left:0;
-  right:0;
-  top:100px;
-  bottom:0;
-  display:block;
-}
+        .loading {
+            text-transform: uppercase;
+            font-family: 'Cabin Condensed', sans-serif;
+            font-weight: bold;
+            font-size: 100pt;
+            text-align: center;
+            height: 120px;
+            line-height: 110px;
+            vertical-align: bottom;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100px;
+            bottom: 0;
+            display: block;
+        }
 
-.loading-2{
-  top:300px;
-  width:473px;
-  height:97px;
-  font-size:0;
-  background:rgba(255,255,255,0.06);
-  margin:0 auto;
-}
-.ff{
-  position:absolute;
-  font-size:12pt;
-  top:-20px;
-  color:white;
-  line-height:12pt;
-  
-}
-.loading-2-text{
-  background-image:url('http://i66.tinypic.com/1jxje9.png');
-  width:473px;
-  height:97px;
-  display:inline-block;
-}
-@keyframes wave-animation{
-  0%{background-position:0 bottom};
-  100%{background-position:200px bottom};
-}
-@keyframes loading-animation{
-  0%{background-size:200px 0px};
-  100%{background-size:200px 200px};
-}
-.wave{
-   background-image:url('http://i66.tinypic.com/optxd3.png');
-  @include background-clip(text);
-  color:rgba(255, 255, 255, 0);
-text-shadow:0px 0px rgba(255, 255, 255, 0.06);
-  animation:wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate;
-  background-size:200px 100px;
-  background-repeat:repeat-x;
-  opacity:1;
-}
-.wave-2{
-  @include background-clip(initial);
-  display:inline-block;
-}
-    
+        .loading-2 {
+            top: 300px;
+            width: 473px;
+            height: 97px;
+            font-size: 0;
+            background: rgba(255, 255, 255, 0.06);
+            margin: 0 auto;
+        }
+
+        .ff {
+            position: absolute;
+            font-size: 12pt;
+            top: -20px;
+            color: white;
+            line-height: 12pt;
+
+        }
+
+        .loading-2-text {
+            background-image: url('http://i66.tinypic.com/1jxje9.png');
+            width: 473px;
+            height: 97px;
+            display: inline-block;
+        }
+
+        @keyframes wave-animation {
+            0% {
+                background-position: 0 bottom
+            }
+
+            ;
+
+            100% {
+                background-position: 200px bottom
+            }
+
+            ;
+        }
+
+        @keyframes loading-animation {
+            0% {
+                background-size: 200px 0px
+            }
+
+            ;
+
+            100% {
+                background-size: 200px 200px
+            }
+
+            ;
+        }
+
+        .wave {
+            background-image: url('http://i66.tinypic.com/optxd3.png');
+            @include background-clip(text);
+            color: rgba(255, 255, 255, 0);
+            text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
+            animation: wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate;
+            background-size: 200px 100px;
+            background-repeat: repeat-x;
+            opacity: 1;
+        }
+
+        .wave-2 {
+            @include background-clip(initial);
+            display: inline-block;
+        }
+
+        body {
+            transform: scale(0.5);
+        }
+
+        .loadingcontent {
+            position: fixed;
+
+        }
+
+        #mainloginbutton {
+            cursor: pointer;
+            position: fixed;
+            left: 18rem;
+            top: 30rem;
+            transform: scale(1);
+            transition: all 0.2s ease-in-out;
+            
+            }
+            #mainloginbutton:hover{
+                
+                transform: scale(1.2);
+        }
+     
     </style>
 </head>
 
@@ -447,14 +502,15 @@ text-shadow:0px 0px rgba(255, 255, 255, 0.06);
 
 
 
-                
 
- <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
 
- <div class="loading wave" >
-   L o  a d i n g 
+                <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet'
+                    type='text/css'>
 
-   <!-- <div class="container-fluid-11">
+                <div class="loading wave">
+                    L o a d i n g
+
+                    <!-- <div class="container-fluid-11">
 
     <div class="row">
         <div class="col-1"></div>
@@ -513,43 +569,53 @@ text-shadow:0px 0px rgba(255, 255, 255, 0.06);
 
     </div>
 </div> -->
+                </div>
 
- </div>
- 
- <!-- For Firefox -->
-   
- </div>
+                <!-- For Firefox -->
+
+            </div>
+        </div>
+
+
     </div>
 
-
-        </div>
-   
     <div *ngif="!isloading==1"></div>
     <div id="content">
 
         <div class="restconetent">
 
 
-            <div class="loginbox1" >
+            <div class="loginbox1">
                 <input type="text" class="inpbox">
                 <h5>
 
-                    <div class="inputname" style="font-family: Jazz LET, fantasy; color: rgba(255, 255, 255, 0.509);">enter your name</div>
+                    <div class="inputname" style="font-family: Jazz LET, fantasy; color: rgba(255, 255, 255, 0.509);">
+                        enter your name</div>
                 </h5>
                 <input type="text" class="inpbox1">
                 <h5>
 
-                    <div class="inputemail" style="font-family: Jazz LET, fantasy; color: rgba(255, 255, 255, 0.509);">enter your E-mail</div>
+                    <div class="inputemail" style="font-family: Jazz LET, fantasy; color: rgba(255, 255, 255, 0.509);">
+                        enter your E-mail</div>
                 </h5>
                 <input type="text" class="inpbox2">
                 <h5>
 
-                    <div class="inputnum" style="font-family: Jazz LET, fantasy; color: rgba(255, 255, 255, 0.509);">enter your number</div>
+                    <div class="inputnum" style="font-family: Jazz LET, fantasy; color: rgba(255, 255, 255, 0.509);">
+                        enter your purpose</div>
                 </h5>
                 <br><br><br>
-                
-                
-               
+                <div (click)="toggleDiv()" id="mainloginbutton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                      </svg>
+                </div>
+                <div *ngIf="isDiv2Visible" style="padding: 20px; background-color: lightcoral;">
+                    This is div2
+                </div>
+
+
+
 
             </div>
         </div>
