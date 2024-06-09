@@ -1,0 +1,100 @@
+
+
+#theportfolio{
+    /* width: 159rem;
+    height: 77rem; */
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+
+
+
+
+
+.maincontent{
+    position: fixed;
+    left: -60rem;
+    top: -3rem;
+    width: 140rem;
+    height: 70rem;
+}
+
+.vanish{
+    display: none;
+}
+.moveright{
+    right: 30rem;
+}
+.dupbut {
+    position: absolute;
+    left: 18rem;
+    z-index: 201;
+    top: 43rem;
+    animation: moveright 1.6s ease-in-out forwards;
+}
+
+@keyframes moveright {
+    0%{
+        left: 78rem;
+        transform: scale(1.2);
+        }
+        5%{
+            left: 78rem;
+            transform: scale(1.8);
+
+    }
+
+    100% {
+        left: 160rem;
+        display: none;
+        transform: scale(0.4);
+    }
+}
+
+.circleforcover{
+    position: fixed;
+    top: 35rem;
+    z-index: 800;
+    left: 93.5rem;
+    width: 100px;
+    height: 200px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 0px;
+    background-color: white;
+    transition: all 0.5s ease-in-out ;
+}
+.circleforcovermover{
+    position: fixed;
+    top: 35rem;
+    left: 93.5rem;
+    width: 100px;
+    height: 200px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 0px;
+    background-color: white;
+    animation: circlecovermove 1.5s ease-in-out 1s forwards ;
+
+}
+@keyframes circlecovermove {
+    0%{
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(60);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.logsupressinto{
+    transition: all 1s ease-in;
+    opacity: 0 ;
+    /* transform: scale(0); */
+}

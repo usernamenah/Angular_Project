@@ -10,6 +10,7 @@
     <style>
         .loginbox1 {
             position: fixed;
+            z-index: 10;
             top: 6rem;
             left: 0rem;
             height: 40rem;
@@ -128,7 +129,7 @@
             z-index: 200;
             left: -30rem;
             top: -5rem;
-            height: 100rem;
+            height: 81rem;
             width: 95rem;
             /* width: 88rem; */
             background-color: #3E115C;
@@ -471,16 +472,20 @@
             cursor: pointer;
             position: fixed;
             left: 18rem;
+            z-index: 201;
+
             top: 30rem;
             transform: scale(1);
+            transition: right 4s ease-in-out;
             transition: all 0.2s ease-in-out;
-            
-            }
-            #mainloginbutton:hover{
-                
-                transform: scale(1.2);
+
         }
-     
+        
+
+        #mainloginbutton:hover {
+
+            transform: scale(1.2);
+        }
     </style>
 </head>
 
@@ -580,12 +585,12 @@
     </div>
 
     <div *ngif="!isloading==1"></div>
-    <div id="content">
+    <div id="content" [class.logsupressinto]="startani">
 
         <div class="restconetent">
 
 
-            <div class="loginbox1">
+            <div class="loginbox1"  >
                 <input type="text" class="inpbox">
                 <h5>
 
@@ -605,19 +610,38 @@
                         enter your purpose</div>
                 </h5>
                 <br><br><br>
-                <div (click)="toggleDiv()" id="mainloginbutton">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
-                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
-                      </svg>
-                </div>
-                <div *ngIf="isDiv2Visible" style="padding: 20px; background-color: lightcoral;">
-                    This is div2
+                <div (click)="toggleDiv()" [class.vanish]="startani" id="mainloginbutton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white"
+                        class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1" />
+                    </svg>
                 </div>
 
 
 
 
             </div>
+        </div>
+    </div>
+    <div class="circleforcover">
+
+    </div>
+    <div class="circleforcovermover"  *ngIf="isDiv2Visible" >
+
+    </div>
+    
+    <div class="maincontent">
+        <div  class="dupbut" *ngIf="startani"  id="mainloginbuttondup">
+                <svg xmlns="http://www.w3.org/2000/svg" width="73" height="73" fill="white"
+                    class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1" />
+                </svg>
+            </div>
+        <div *ngIf="ismainVisible" id="theportfolio">
+            
+            jfs
         </div>
     </div>
 
