@@ -4,7 +4,7 @@
       { "src": "angular.json", "use": "@vercel/static-build" }
     ],
     "scripts": {
-    "build": "ng build --prod"
+    "build": "ng serve"
   }
 
   }
