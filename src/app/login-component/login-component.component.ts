@@ -59,7 +59,7 @@ export class LoginComponentComponent implements OnInit, OnDestroy {
     
     setTimeout(() => {
       this.ismainVisible = !this.ismainVisible;
-    }, 2500);
+    }, 2000);
   }
 }
 

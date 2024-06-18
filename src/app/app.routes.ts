@@ -8,6 +8,3 @@ export const routes: Routes = [
 {path : '',component:LoginComponentComponent},
 {path: 'home', component:MyComponentComponent}
 ];
-
-
-
