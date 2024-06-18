@@ -566,7 +566,7 @@ height:100%;
     text-align: center;
     height: 120px;
     line-height: 110px;
-    vertical-align: bottom;
+   
     position: absolute;
     left: 0;
     right: 0;
@@ -600,37 +600,10 @@ height:100%;
     display: inline-block;
 }
 
-@keyframes wave-animation {
-    0% {
-        background-position: 0 bottom
-    }
-
-    ;
-
-    100% {
-        background-position: 200px bottom
-    }
-
-    ;
-}
-
-@keyframes loading-animation {
-    0% {
-        background-size: 200px 0px
-    }
-
-    ;
-
-    100% {
-        background-size: 200px 200px
-    }
-
-    ;
-}
 
 .wave {
     background-image: url('http://i66.tinypic.com/optxd3.png');
-    @include background-clip(text);
+    
     color: rgba(255, 255, 255, 0);
     text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
     animation: wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate;
@@ -640,7 +613,7 @@ height:100%;
 }
 
 .wave-2 {
-    @include background-clip(initial);
+    
     display: inline-block;
 }
 
